@@ -2,13 +2,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './search.css';
 
 class Search extends React.Component{
     render(){
-        return <h1>Some Search Text</h1>;
+        return <h1 className="some-text">Some Search Text</h1>;
     }
-
-
 }
 
 ReactDOM.render(
