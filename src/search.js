@@ -9,7 +9,7 @@ class Search extends React.Component{
     render(){
         return <h1 className="some-text">
             <img src={logo}/>
-            <span>Some Search Text</span>
+            <span>Search Text</span>
             </h1>;
     }
 }
