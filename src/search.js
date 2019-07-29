@@ -8,11 +8,11 @@ import wechat from '../src/images/wechat.png'
 
 class Search extends React.Component{
     render(){
-        return <h1 className="some-text">
+        return <div className="page-content">
             <img src={logo}/>
             <img src={wechat}/>
-            <span>Some Search Text</span>
-            </h1>;
+            <h1>Some Search Text</h1>
+            </div>;
     }
 }
 

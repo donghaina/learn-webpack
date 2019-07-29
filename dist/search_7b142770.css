@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.page-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: skyblue;
+  font-size: 20px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
