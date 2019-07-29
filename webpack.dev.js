@@ -13,7 +13,7 @@ module.exports = {
         filename: '[name].js'
     },
     mode: 'development',
-    module:{
+    module: {
         rules: [
             {
                 test: /.js$/,
@@ -37,15 +37,21 @@ module.exports = {
             {
                 test: /.(png|jpg|gif|jpeg)$/,
                 use: [
-                    'file-loader'
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10240 // 大于10K使用base64编码打包
+                        }
+                    }
+
                 ]
-            }
+            },
         ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
-    devServer:{
+    devServer: {
         contentBase: './dist',
         hot: true
     }
