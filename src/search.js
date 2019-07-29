@@ -3,10 +3,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './search.less';
+import logo from '../src/images/avatar.jpg'
 
 class Search extends React.Component{
     render(){
-        return <h1 className="some-text">Some Search Text</h1>;
+        return <h1 className="some-text">
+            <img src={logo}/>
+            <span>Some Search Text</span>
+            </h1>;
     }
 }
 
